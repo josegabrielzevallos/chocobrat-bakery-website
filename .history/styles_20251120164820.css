@@ -14,10 +14,12 @@ body {
 
 .container {
     max-width: 1478px;
-    margin: 0 auto;        /* centra TODAS las secciones */
-    padding: 0 24px;        /* padding uniforme sin empujar a la izquierda */
+    /* margin: auto; */
+    
+    padding-bottom:20px ;
+    padding-left: 50px;
+    padding-right: 5px;
 }
-
 
 /* ===== NAVBAR ===== */
 header {
@@ -343,25 +345,11 @@ header {
     position: relative;
     padding: 80px 20px 100px;
     background-color: #FFFFFF;
-
-    /* cuadrícula punteada */
+    /* fondo cuadriculado gris clarito */
     background-image:
-        repeating-linear-gradient(
-            to right,
-            rgba(0,0,0,0.08) 0px,
-            rgba(0,0,0,0.08) 1px,
-            transparent 1px,
-            transparent 70px
-        ),
-        repeating-linear-gradient(
-            to bottom,
-            rgba(0,0,0,0.08) 0px,
-            rgba(0,0,0,0.08) 1px,
-            transparent 1px,
-            transparent 70px
-        );
-
-    background-size: 19.5px 19.5px;
+        linear-gradient(0deg, rgba(0,0,0,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,0,0,0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
 }
 
 .quotes-inner {
@@ -389,43 +377,31 @@ header {
     line-height: 1.5;
     font-weight: 600;
     color: #381B1B;
-    z-index: 2;
 }
 
 .quote-text::before,
 .quote-text::after {
-    font-family: 'Playfair Display', serif;
+    content: "“";
     position: absolute;
-    font-size: 150px;
-    font-weight: 950;
-    pointer-events: none;
-    z-index: 0;
-
-    /* degradado real */
-    background: linear-gradient(
-        to bottom,
-        #e7cda4 0%,
-        #eacfa3 45%,
-        rgba(255,255,255,0.8) 80%,
-        rgba(255,255,255,1) 100%
-    );
+    font-size: 120px;            /* tamaño real de la referencia */
+    font-weight: 700;
+    opacity: 0.15;               /* degradado suave */
+    background: linear-gradient(135deg, #FDEBCF, #F7D9A5);
     -webkit-background-clip: text;
     color: transparent;
-
-    opacity: 0.9;  /* alta para que se note la panza blanca */
+    pointer-events: none;
+    z-index: -1;                 /* queda detrás del texto */
 }
 
-
 .quote-text::before {
-    content: "“";
-    left: -40px;
-    top: -75px;
+    left: -60px;                 /* posición exacta */
+    top: -30px;
 }
 
 .quote-text::after {
     content: "”";
-    right: -55px;
-    bottom: -75px;
+    right: -60px;
+    bottom: -30px;               /* bajada igual que en tu referencia */
 }
 
 
@@ -441,7 +417,8 @@ header {
     height: 80px;
     border-radius: 50%;
     object-fit: cover;
-    /*box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);*/
+    border: 4px solid #FFFFFF;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 .quote-author h3 {
@@ -477,58 +454,3 @@ header {
     background-color: #5C1E1E;
 }
 
-/* OVAL TRANSPARENTE EN EL CENTRO DE LA SECCION */
-.quotes-section {
-    position: relative;
-    padding: 120px 0 140px;
-
-    /* cuadrícula que ya tenés */
-    background-color: #FFFFFF;
-    background-image:
-        repeating-linear-gradient(
-            to right,
-            rgba(0,0,0,0.08) 0px,
-            rgba(0,0,0,0.08) 1px,
-            transparent 1px,
-            transparent 42px
-        ),
-        repeating-linear-gradient(
-            to bottom,
-            rgba(0,0,0,0.08) 0px,
-            rgba(0,0,0,0.08) 1px,
-            transparent 1px,
-            transparent 42px
-        );
-    background-size: 42px 42px;
-}
-
-/* Circulo con interior transparente */
-.quotes-section::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-
-    background: white;
-
-    /* zona central recortada (transparente) */
-    mask-image: radial-gradient(
-        ellipse 95% 85% at center,   /* ancho y alto equilibrados */
-        transparent 62%,             /* zona visible moderada */
-        black 63%
-    );
-
-    -webkit-mask-image: radial-gradient(
-        ellipse 65% 65% at center,
-        transparent 62%,
-        black 63%
-    );
-
-    pointer-events: none;
-    z-index: 2; /* Cubre todo excepto el centro */
-}
-
-/* El contenido debe quedar encima del recorte */
-.quotes-inner {
-    position: relative;
-    z-index: 3;
-}

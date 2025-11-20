@@ -14,10 +14,12 @@ body {
 
 .container {
     max-width: 1478px;
-    margin: 0 auto;        /* centra TODAS las secciones */
-    padding: 0 24px;        /* padding uniforme sin empujar a la izquierda */
+    /* margin: auto; */
+    
+    padding-bottom:20px ;
+    padding-left: 50px;
+    padding-right: 5px;
 }
-
 
 /* ===== NAVBAR ===== */
 header {
@@ -397,7 +399,7 @@ header {
     font-family: 'Playfair Display', serif;
     position: absolute;
     font-size: 150px;
-    font-weight: 950;
+    font-weight: 700;
     pointer-events: none;
     z-index: 0;
 
@@ -477,58 +479,29 @@ header {
     background-color: #5C1E1E;
 }
 
-/* OVAL TRANSPARENTE EN EL CENTRO DE LA SECCION */
+/* MARCO OVALADO BLANCO PARA LA SECCION DE QUOTES */
 .quotes-section {
     position: relative;
     padding: 120px 0 140px;
-
-    /* cuadrícula que ya tenés */
-    background-color: #FFFFFF;
-    background-image:
-        repeating-linear-gradient(
-            to right,
-            rgba(0,0,0,0.08) 0px,
-            rgba(0,0,0,0.08) 1px,
-            transparent 1px,
-            transparent 42px
-        ),
-        repeating-linear-gradient(
-            to bottom,
-            rgba(0,0,0,0.08) 0px,
-            rgba(0,0,0,0.08) 1px,
-            transparent 1px,
-            transparent 42px
-        );
-    background-size: 42px 42px;
 }
 
-/* Circulo con interior transparente */
 .quotes-section::before {
     content: "";
     position: absolute;
     inset: 0;
+    width: 100%;
+    height: 100%;
 
     background: white;
 
-    /* zona central recortada (transparente) */
-    mask-image: radial-gradient(
-        ellipse 95% 85% at center,   /* ancho y alto equilibrados */
-        transparent 62%,             /* zona visible moderada */
-        black 63%
-    );
+    border-radius: 1000px;   /* 🔥 crea el óvalo */
+    z-index: 0;              /* detrás del texto, delante de la cuadricula */
 
-    -webkit-mask-image: radial-gradient(
-        ellipse 65% 65% at center,
-        transparent 62%,
-        black 63%
-    );
-
-    pointer-events: none;
-    z-index: 2; /* Cubre todo excepto el centro */
+    box-shadow: 0 0 40px rgba(255,255,255,0.9); /* suaviza bordes */
 }
 
-/* El contenido debe quedar encima del recorte */
+/* Asegura que el contenido quede por encima del marco */
 .quotes-inner {
     position: relative;
-    z-index: 3;
+    z-index: 2;
 }

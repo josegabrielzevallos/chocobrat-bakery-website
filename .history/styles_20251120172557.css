@@ -14,10 +14,12 @@ body {
 
 .container {
     max-width: 1478px;
-    margin: 0 auto;        /* centra TODAS las secciones */
-    padding: 0 24px;        /* padding uniforme sin empujar a la izquierda */
+    /* margin: auto; */
+    
+    padding-bottom:20px ;
+    padding-left: 50px;
+    padding-right: 5px;
 }
-
 
 /* ===== NAVBAR ===== */
 header {
@@ -344,24 +346,24 @@ header {
     padding: 80px 20px 100px;
     background-color: #FFFFFF;
 
-    /* cuadrícula punteada */
+    /* cuadrícula punteada real 40px x 40px */
     background-image:
         repeating-linear-gradient(
             to right,
             rgba(0,0,0,0.08) 0px,
             rgba(0,0,0,0.08) 1px,
             transparent 1px,
-            transparent 70px
+            transparent 40px
         ),
         repeating-linear-gradient(
             to bottom,
             rgba(0,0,0,0.08) 0px,
             rgba(0,0,0,0.08) 1px,
             transparent 1px,
-            transparent 70px
+            transparent 40px
         );
 
-    background-size: 19.5px 19.5px;
+    background-size: 37px 37px;
 }
 
 .quotes-inner {
@@ -396,16 +398,16 @@ header {
 .quote-text::after {
     font-family: 'Playfair Display', serif;
     position: absolute;
-    font-size: 150px;
-    font-weight: 950;
+    font-size: 140px;
+    font-weight: 700;
     pointer-events: none;
     z-index: 0;
 
     /* degradado real */
     background: linear-gradient(
         to bottom,
-        #e7cda4 0%,
-        #eacfa3 45%,
+        #FDEBCF 0%,
+        #FDEBCF 45%,
         rgba(255,255,255,0.8) 80%,
         rgba(255,255,255,1) 100%
     );
@@ -419,13 +421,13 @@ header {
 .quote-text::before {
     content: "“";
     left: -40px;
-    top: -75px;
+    top: -50px;
 }
 
 .quote-text::after {
     content: "”";
-    right: -55px;
-    bottom: -75px;
+    right: -40px;
+    bottom: -50px;
 }
 
 
@@ -477,58 +479,3 @@ header {
     background-color: #5C1E1E;
 }
 
-/* OVAL TRANSPARENTE EN EL CENTRO DE LA SECCION */
-.quotes-section {
-    position: relative;
-    padding: 120px 0 140px;
-
-    /* cuadrícula que ya tenés */
-    background-color: #FFFFFF;
-    background-image:
-        repeating-linear-gradient(
-            to right,
-            rgba(0,0,0,0.08) 0px,
-            rgba(0,0,0,0.08) 1px,
-            transparent 1px,
-            transparent 42px
-        ),
-        repeating-linear-gradient(
-            to bottom,
-            rgba(0,0,0,0.08) 0px,
-            rgba(0,0,0,0.08) 1px,
-            transparent 1px,
-            transparent 42px
-        );
-    background-size: 42px 42px;
-}
-
-/* Circulo con interior transparente */
-.quotes-section::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-
-    background: white;
-
-    /* zona central recortada (transparente) */
-    mask-image: radial-gradient(
-        ellipse 95% 85% at center,   /* ancho y alto equilibrados */
-        transparent 62%,             /* zona visible moderada */
-        black 63%
-    );
-
-    -webkit-mask-image: radial-gradient(
-        ellipse 65% 65% at center,
-        transparent 62%,
-        black 63%
-    );
-
-    pointer-events: none;
-    z-index: 2; /* Cubre todo excepto el centro */
-}
-
-/* El contenido debe quedar encima del recorte */
-.quotes-inner {
-    position: relative;
-    z-index: 3;
-}

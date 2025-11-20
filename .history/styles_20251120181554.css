@@ -14,8 +14,8 @@ body {
 
 .container {
     max-width: 1478px;
-    margin: 0 auto;        /* centra TODAS las secciones */
-    padding: 0 24px;        /* padding uniforme sin empujar a la izquierda */
+    margin: 0 ;        /* centra TODAS las secciones */
+    padding: 0 ;        /* padding uniforme sin empujar a la izquierda */
 }
 
 
@@ -531,4 +531,89 @@ header {
 .quotes-inner {
     position: relative;
     z-index: 3;
+}
+
+
+/* ===== FOOTER ===== */
+.site-footer {
+    background-color: #FBE8C4;
+    font-family: "Poppins", sans-serif; /* misma fuente de la maqueta */
+    color: #5C1E1E;
+    margin-top: 60px;
+    padding: 24px 0 40px;
+    font-size: 0.85rem;
+}
+
+.footer-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 12px;
+}
+
+.footer-logo {
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;   /* efecto similar al de la imagen */
+}
+
+.footer-nav {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: #5C1E1E;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.footer-nav a:hover {
+    opacity: 0.8;
+}
+
+.footer-divider {
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,0.06);
+    margin: 0;
+}
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 16px;
+}
+
+.footer-copy {
+    color: #5C1E1E;
+}
+
+.footer-social {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.footer-social img {
+    width: 18px;
+    height: 18px;
+    display: block;
+}
+
+/* Footer responsive */
+@media (max-width: 768px) {
+    .footer-top,
+    .footer-bottom {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+
+    .footer-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }

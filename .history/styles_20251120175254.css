@@ -14,10 +14,12 @@ body {
 
 .container {
     max-width: 1478px;
-    margin: 0 auto;        /* centra TODAS las secciones */
-    padding: 0 24px;        /* padding uniforme sin empujar a la izquierda */
+    /* margin: auto; */
+    
+    padding-bottom:20px ;
+    padding-left: 50px;
+    padding-right: 5px;
 }
-
 
 /* ===== NAVBAR ===== */
 header {
@@ -512,16 +514,12 @@ header {
 
     /* zona central recortada (transparente) */
     mask-image: radial-gradient(
-        ellipse 95% 85% at center,   /* ancho y alto equilibrados */
-        transparent 62%,             /* zona visible moderada */
-        black 63%
+        ellipse 70% 45% at center,
+        transparent 40%,
+        black 41%
     );
 
-    -webkit-mask-image: radial-gradient(
-        ellipse 65% 65% at center,
-        transparent 62%,
-        black 63%
-    );
+
 
     pointer-events: none;
     z-index: 2; /* Cubre todo excepto el centro */
@@ -532,3 +530,4 @@ header {
     position: relative;
     z-index: 3;
 }
+
