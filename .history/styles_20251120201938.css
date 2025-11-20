@@ -192,7 +192,7 @@ header {
 .upper-small {
     font-size: 0.30em;      /* fuente más chica */
     position: relative;
-    top: -0.99em;           /* súbelo hacia arriba */
+    top: -0.95em;           /* súbelo hacia arriba */
 }
 
 

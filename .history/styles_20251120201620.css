@@ -189,13 +189,11 @@ header {
 
 }
 
-.upper-small {
-    font-size: 0.30em;      /* fuente más chica */
+.slide-text sup {
+    font-size: 0.6em;
+    top: -0.4em;
     position: relative;
-    top: -0.99em;           /* súbelo hacia arriba */
 }
-
-
 
 .slider-controls {
       display: flex;

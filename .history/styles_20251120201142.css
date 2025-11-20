@@ -189,14 +189,6 @@ header {
 
 }
 
-.upper-small {
-    font-size: 0.30em;      /* fuente más chica */
-    position: relative;
-    top: -0.99em;           /* súbelo hacia arriba */
-}
-
-
-
 .slider-controls {
       display: flex;
       align-items: center;
@@ -271,16 +263,19 @@ header {
 .rating {
     display: flex;
     align-items: center;
+    gap: 6px;              /* espacio entre la imagen y el texto */
 }
 
-.rating img {
-    width: 90px;
+.rating-img {
+    width: 90px;           /* ajusta según tu diseño */
     height: auto;
+    display: block;
 }
 
-.rating span {
-    color: #6F6F6F;
-    margin-left: 5px;
+.rating-text {
+    font-size: 0.9rem;
+    color: #6F6F6F;        /* gris suave */
+    margin-left: 4px;
 }
 
 .view-more {

@@ -189,12 +189,10 @@ header {
 
 }
 
-.upper-small {
-    font-size: 0.30em;      /* fuente más chica */
-    position: relative;
-    top: -0.99em;           /* súbelo hacia arriba */
+.slide-text .small {
+    font-size: 0.7em;   /* más chico → ajustá el número que quieras */
+    font-weight: inherit; /* mantiene el peso original */
 }
-
 
 
 .slider-controls {
