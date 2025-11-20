@@ -81,7 +81,7 @@ header {
     display: block;
     align-items: center;
     justify-content: space-between;
-    background: linear-gradient(to right, white, #f1ecdc)
+    background: linear-gradient(to right, white, #f1ecdc);
 
     margin-top: 40px;
     background-color: #FFF8F2;
