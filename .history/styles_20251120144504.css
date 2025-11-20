@@ -223,17 +223,13 @@ header {
 .story-card {
     display: flex;
     align-items: center;
-    justify-content: space-between;   /* nuevo */
     gap: 40px;
-    padding: 40px;    
+    margin: 40px 0;
+    
 }
 
 .story-card-reverse {
     flex-direction: row-reverse;
-}
-
-.story-text {
-    flex: 1;        /* 50% del espacio */
 }
 
 .story-text h3 {
@@ -263,16 +259,12 @@ header {
     font-size: 0.95rem;
 }
 
-.story-img {
-    flex: 1;        /* 50% del espacio */
-}
-
 .story-img img {
-    width: 100%;
-    height: 100%;
-    max-height: 300px;     /* evita que se extienda demasiado */
+    width: 150%;
+    max-width: 500px;
+    border-radius: 15px;
     object-fit: cover;
-    border-radius: 24px;
+    display: block;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 

@@ -7,7 +7,7 @@
 
 body {
     font-family: "Poppins", sans-serif;
-    background-color: #FFF;
+    background-color: #FFF8F2;
     color: #381B1B;
 }
 
@@ -77,8 +77,6 @@ header {
     align-items: center;
     justify-content: space-between;
     margin-top: 40px;
-    background-color: #FFF8F2;
-    border-radius: 16px;
 }
 
 .hero-text {
@@ -133,8 +131,6 @@ header {
     gap: 15px;
     overflow-x: auto;
     padding-bottom: 10px;
-    background-color: #FFF8F2;
-    border-radius: 16px;
 }
 
 .thumb {
@@ -153,9 +149,6 @@ header {
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
-    background-color: #FFF8F2;
-    border-radius: 16px;
-    padding: 20px;
 }
 
 .title-row h2 {
@@ -173,7 +166,6 @@ header {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 25px;
-    margin-top: 30px;
 }
 
 .card {
@@ -211,68 +203,3 @@ header {
     border: 1px solid #381B1B;
     color: #381B1B;
 }
-
-/* ===== STORY / ABOUT BAKERY SECTION ===== */
-.story {
-    margin-top: 80px;
-    display: flex;
-    flex-direction: column;
-    gap: 6  0px;
-}
-
-.story-card {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;   /* nuevo */
-    gap: 40px;
-    padding: 40px;    
-}
-
-.story-card-reverse {
-    flex-direction: row-reverse;
-}
-
-.story-text {
-    flex: 1;        /* 50% del espacio */
-}
-
-.story-text h3 {
-    font-size: 1rem;
-    font-weight: 500;
-    color: #A35A4A;
-    margin-bottom: 4px;
-}
-
-.story-text h2 {
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 16px;
-    color: #381B1B;
-}
-
-.story-text p {
-    color: #6F6F6F;
-    line-height: 1.7;
-    margin-bottom: 18px;
-}
-
-.story-link {
-    text-decoration: none;
-    font-weight: 500;
-    color: #381B1B;
-    font-size: 0.95rem;
-}
-
-.story-img {
-    flex: 1;        /* 50% del espacio */
-}
-
-.story-img img {
-    width: 100%;
-    height: 100%;
-    max-height: 300px;     /* evita que se extienda demasiado */
-    object-fit: cover;
-    border-radius: 24px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-}
-

@@ -225,7 +225,11 @@ header {
     align-items: center;
     justify-content: space-between;   /* nuevo */
     gap: 40px;
-    padding: 40px;    
+
+    background: #ffffff;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    
 }
 
 .story-card-reverse {

@@ -7,7 +7,7 @@
 
 body {
     font-family: "Poppins", sans-serif;
-    background-color: #FFF;
+    background-color: #FFF8F2;
     color: #381B1B;
 }
 
@@ -77,8 +77,6 @@ header {
     align-items: center;
     justify-content: space-between;
     margin-top: 40px;
-    background-color: #FFF8F2;
-    border-radius: 16px;
 }
 
 .hero-text {
@@ -133,8 +131,6 @@ header {
     gap: 15px;
     overflow-x: auto;
     padding-bottom: 10px;
-    background-color: #FFF8F2;
-    border-radius: 16px;
 }
 
 .thumb {
@@ -153,9 +149,6 @@ header {
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
-    background-color: #FFF8F2;
-    border-radius: 16px;
-    padding: 20px;
 }
 
 .title-row h2 {
@@ -173,7 +166,6 @@ header {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 25px;
-    margin-top: 30px;
 }
 
 .card {
@@ -214,26 +206,24 @@ header {
 
 /* ===== STORY / ABOUT BAKERY SECTION ===== */
 .story {
-    margin-top: 80px;
+    margin-top: 60px;
     display: flex;
     flex-direction: column;
-    gap: 6  0px;
+    gap: 40px;
 }
 
 .story-card {
+    background: #ffffff;
+    border-radius: 28px;
+    padding: 30px;
     display: flex;
     align-items: center;
-    justify-content: space-between;   /* nuevo */
     gap: 40px;
-    padding: 40px;    
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
 }
 
 .story-card-reverse {
     flex-direction: row-reverse;
-}
-
-.story-text {
-    flex: 1;        /* 50% del espacio */
 }
 
 .story-text h3 {
@@ -252,7 +242,7 @@ header {
 
 .story-text p {
     color: #6F6F6F;
-    line-height: 1.7;
+    line-height: 1.6;
     margin-bottom: 18px;
 }
 
@@ -263,16 +253,11 @@ header {
     font-size: 0.95rem;
 }
 
-.story-img {
-    flex: 1;        /* 50% del espacio */
-}
-
 .story-img img {
     width: 100%;
-    height: 100%;
-    max-height: 300px;     /* evita que se extienda demasiado */
-    object-fit: cover;
+    max-width: 420px;
     border-radius: 24px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    object-fit: cover;
+    display: block;
 }
 
