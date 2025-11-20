@@ -7,20 +7,23 @@
 
 body {
     font-family: "Poppins", sans-serif;
-    background-color: #FFF8F2;
+    background-color: #ffffff;
     color: #381B1B;
 }
 
 .container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
+    max-width: 1478px;
+    /* margin: auto; */
+    
+    padding-bottom:20px ;
+    padding-left: 50px;
+    padding-right: 5px;
 }
 
 /* ===== NAVBAR ===== */
 header {
     background: #FFF;
-    padding: 20px 0;
+    padding: 0px 0;
 }
 
 .navbar {
@@ -73,15 +76,22 @@ header {
 
 /* ===== HERO ===== */
 .hero {
-    display: flex;
+    /* display: flex; */
+    display: block;
     align-items: center;
     justify-content: space-between;
-    margin-top: 40px;
+    background: linear-gradient(to right, white, #f1ecdc)
+
 }
 
 .hero-text {
-    max-width: 45%;
+    max-width: 100%;
 }
+.hero-back{
+    /* float: right; */
+    margin-top: 200px;
+    margin-right: 50px;
+} 
 
 .hero-text h2 {
     font-size: 2.8rem;
@@ -122,15 +132,36 @@ header {
 .hero-img img {
     width: 480px;
     border-radius: 12px;
+    float: right;
 }
 
 /* ===== CAROUSEL ===== */
 .carousel {
-    margin-top: 40px;
+    margin-top: -125px;
     display: flex;
-    gap: 15px;
-    overflow-x: auto;
+    gap: 10px;
+    clear: both;
+    overflow-x: hidden;
     padding-bottom: 10px;
+    float:right;
+    background: #f6ffff59;
+    border-top-left-radius: 64px;
+    border-bottom-left-radius: 64px;
+
+}
+
+.slider-controls {
+      display: flex;
+      align-items: center;
+      gap: 16px;           /* espacio entre flecha y texto */
+      font-family: Arial, sans-serif;
+      font-size: 18px;
+    }
+
+.divider {
+  width: 1.5px;
+  height: 53px; /* Ajusta el largo de la línea */
+  background-color: #000000; /* Color suave como en tu imagen */
 }
 
 .thumb {
@@ -149,6 +180,8 @@ header {
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
+    clear: both;
+    padding-top: 60px;
 }
 
 .title-row h2 {
@@ -164,7 +197,7 @@ header {
 /* ===== PRODUCT GRID ===== */
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 25px;
 }
 
