@@ -239,18 +239,13 @@ header {
 .title-row h2 {
     font-size: 2.4rem;
     color: #381B1B;
-    flex-shrink: 0;   /* evita que el título se achique */
+    flex-shrink: 0;
 }
 
 .title-row p {
-    max-width: 520px;                /* ancho similar al diseño */
+    max-width: 45%;
     color: #6F6F6F;
-    line-height: 1.7;
-
-    border-left: 1px solid #C9B6A4;  /* línea vertical entre título y texto */
-    padding-left: 28px;              /* separa el texto de la línea */
 }
-
 
 /* ===== PRODUCT GRID ===== */
 .product-grid {
