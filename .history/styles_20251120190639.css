@@ -311,7 +311,7 @@ header {
     background-color: #FBE8C4;   /* banda beige */
     padding: 60px 20px;
     margin-top: 60px;
-    max-width: 1478px;   /* IGUAL que el container */
+        max-width: 1478px;   /* IGUAL que el container */
     margin-left: auto;   
     margin-right: auto; 
 }
@@ -346,10 +346,6 @@ header {
     position: relative;
     padding: 80px 20px 100px;
     background-color: #FFFFFF;
-    /* Dimensiones igual que el container */
-    max-width: 1478px;   
-    margin-left: auto;   
-    margin-right: auto; 
 
     /* cuadrícula punteada */
     background-image:
@@ -550,10 +546,6 @@ header {
     margin-top: 60px;
     padding: 24px 0 40px;
     font-size: 0.85rem;
-    /* Dimensiones igual que el container */
-    max-width: 1478px;   
-    margin-left: auto;   
-    margin-right: auto; 
 }
 
 .footer-top {
