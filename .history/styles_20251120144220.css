@@ -7,24 +7,20 @@
 
 body {
     font-family: "Poppins", sans-serif;
-    background-color: #ffffff;
     background-color: #FFF;
     color: #381B1B;
 }
 
 .container {
-    max-width: 1478px;
-    /* margin: auto; */
-    
-    padding-bottom:20px ;
-    padding-left: 50px;
-    padding-right: 5px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
 }
 
 /* ===== NAVBAR ===== */
 header {
     background: #FFF;
-    padding: 0px 0;
+    padding: 20px 0;
 }
 
 .navbar {
@@ -77,25 +73,17 @@ header {
 
 /* ===== HERO ===== */
 .hero {
-    /* display: flex; */
-    display: block;
+    display: flex;
     align-items: center;
     justify-content: space-between;
-    background: linear-gradient(to right, white, #f1ecdc)
-
     margin-top: 40px;
     background-color: #FFF8F2;
     border-radius: 16px;
 }
 
 .hero-text {
-    max-width: 100%;
+    max-width: 45%;
 }
-.hero-back{
-    /* float: right; */
-    margin-top: 200px;
-    margin-right: 50px;
-} 
 
 .hero-text h2 {
     font-size: 2.8rem;
@@ -136,36 +124,15 @@ header {
 .hero-img img {
     width: 480px;
     border-radius: 12px;
-    float: right;
 }
 
 /* ===== CAROUSEL ===== */
 .carousel {
-    margin-top: -125px;
+    margin-top: 40px;
     display: flex;
-    gap: 10px;
-    clear: both;
-    overflow-x: hidden;
+    gap: 15px;
+    overflow-x: auto;
     padding-bottom: 10px;
-    float:right;
-    background: #f6ffff59;
-    border-top-left-radius: 64px;
-    border-bottom-left-radius: 64px;
-
-}
-
-.slider-controls {
-      display: flex;
-      align-items: center;
-      gap: 16px;           /* espacio entre flecha y texto */
-      font-family: Arial, sans-serif;
-      font-size: 18px;
-    }
-
-.divider {
-  width: 1.5px;
-  height: 53px; /* Ajusta el largo de la línea */
-  background-color: #000000; /* Color suave como en tu imagen */
     background-color: #FFF8F2;
     border-radius: 16px;
 }
@@ -186,8 +153,9 @@ header {
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
-    clear: both;
-    padding-top: 60px;
+    background-color: #FFF8F2;
+    border-radius: 16px;
+    padding: 20px;
 }
 
 .title-row h2 {
@@ -203,7 +171,7 @@ header {
 /* ===== PRODUCT GRID ===== */
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 25px;
     margin-top: 30px;
 }
@@ -255,17 +223,13 @@ header {
 .story-card {
     display: flex;
     align-items: center;
-    justify-content: space-between;   /* nuevo */
     gap: 40px;
-    padding: 40px;    
+    margin: 40px 0;
+    
 }
 
 .story-card-reverse {
     flex-direction: row-reverse;
-}
-
-.story-text {
-    flex: 1;        /* 50% del espacio */
 }
 
 .story-text h3 {
@@ -295,16 +259,12 @@ header {
     font-size: 0.95rem;
 }
 
-.story-img {
-    flex: 1;        /* 50% del espacio */
-}
-
 .story-img img {
     width: 100%;
-    height: 100%;
-    max-height: 300px;     /* evita que se extienda demasiado */
+    max-width: 500px;
+    border-radius: 10px;
     object-fit: cover;
-    border-radius: 24px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    display: block;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
 
